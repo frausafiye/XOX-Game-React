@@ -1,0 +1,10 @@
+/** @format */
+
+p {
+  position: absolute;
+  bottom: 10vh;
+  text-align: center;
+  width: 50vw;
+  font-size: 2rem;
+  font-weight: bold;
+}

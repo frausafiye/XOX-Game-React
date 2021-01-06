@@ -1,0 +1,19 @@
+/** @format */
+.container {
+  width: 50vw;
+  height: 100vh;
+}
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+}
