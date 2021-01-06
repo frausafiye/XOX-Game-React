@@ -1,0 +1,36 @@
+/** @format */
+
+.winnerbox {
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.players-box {
+  width: 30vw;
+  margin: 5vh auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.winnerbox h1 {
+  margin-bottom: 10vh;
+}
+.winner-btn {
+  text-align: center;
+  font-weight: bold;
+  margin-right: 20px;
+  background: blue;
+  background: linear-gradient(90deg, blue 0%, red 100%);
+  color: black;
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  box-shadow: 1px 2px lightgrey;
+}

@@ -18,9 +18,10 @@ export default function Container(props) {
   const players=['player1','player2']
   const [activePlayer,setActivePlayer]=useState('player1');
   const [score,setScore]=useState({player1:0,player2:0})
+  const [winner,setWinner]=useState(null)
 
   return (
-    <myContext.Provider value={{matrix,setMatrix,players,activePlayer,setActivePlayer,score,setScore}}>
+    <myContext.Provider value={{matrix,setMatrix,players,activePlayer,setActivePlayer,score,setScore,winner,setWinner}}>
       {props.children}
     </myContext.Provider>
   )

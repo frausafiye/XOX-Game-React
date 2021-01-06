@@ -26,7 +26,7 @@
       else if(id>=3 && id<=5){
         verticalArray=[mtrx[id-3].value,mtrx[id].value,mtrx[id+3].value];
       }
-      else{//(id>5)
+      else{
         verticalArray=[mtrx[id].value,mtrx[id-3].value,mtrx[id-6].value];
       }
       arrayCheck(verticalArray)
