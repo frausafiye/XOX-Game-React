@@ -1,7 +1,7 @@
 {
   " name": "XOX",
   "version": "1.0.0",
-  "description": "des",
+  "description": "",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -28,6 +28,5 @@
       "last 1 safari version"
     ]
   },
-  "author": "naqvi",
-  "license": "ISC"
+  "author": "safiye"
 }

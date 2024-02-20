@@ -1,18 +1,35 @@
-/** @format */
 .container {
   width: 50vw;
   height: 100vh;
 }
 .blue {
-  background-color: blue;
+  background-color: #0759ab;
 }
 
 .red {
-  background-color: red;
+  background-color: #e60000;
 }
-.flex-container {
+.flex-container.red {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+.flex-container.blue {
+  left: 95%;
+}
+.players-box {
+  width: 100%;
+  padding: 3vh 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 6px 10px -1px rgba(78, 78, 182, 0.2); */
+  box-shadow: 0 6px 10px -1px rgba(41, 27, 38, 0.2);
 }
 h2 {
   text-align: center;
