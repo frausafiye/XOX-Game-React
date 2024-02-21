@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//frausafiye.github.io/XOX-Game-React/precache-manifest.693bf0e2de79231686b2d97d42decfe2.js"
+  "//frausafiye.github.io/XOX-Game-React/precache-manifest.89fd65ab0e3e564892ca80f9e4aa52f8.js"
 );
 
 self.addEventListener('message', (event) => {

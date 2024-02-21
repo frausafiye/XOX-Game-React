@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de43b9b8d9306a97f0434321b012106d",
+    "revision": "4c169e3fb69b25ba8469f78eb6bc8d8d",
     "url": "//frausafiye.github.io/XOX-Game-React/index.html"
   },
   {
-    "revision": "96858e31cab75fed7bcb",
+    "revision": "8612cb53ddec8c5dbcdb",
     "url": "//frausafiye.github.io/XOX-Game-React/static/css/main.6fe7138b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//frausafiye.github.io/XOX-Game-React/static/js/2.c73e3934.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96858e31cab75fed7bcb",
-    "url": "//frausafiye.github.io/XOX-Game-React/static/js/main.31891318.chunk.js"
+    "revision": "8612cb53ddec8c5dbcdb",
+    "url": "//frausafiye.github.io/XOX-Game-React/static/js/main.07157659.chunk.js"
   },
   {
     "revision": "1c2c7ec002ae0e1ab084",
