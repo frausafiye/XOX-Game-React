@@ -59,19 +59,14 @@ export default function Player(props) {
     }
   }, [score]);
 
-  // useEffect(() => {
-  //   if (overlinedLines.length) {}
-
-  // }, [overlinedLines]);
-
   return (
     <div
       className={
         props.player === "player1" ? "blue container" : "red container"
       }
     >
-      <div className="players-box">
-        <h2>{props.player.toUpperCase()}</h2>
+      <div className="players-nav">
+        <h2>{props.player === "player1" ? "PLAYER 1" : "PLAYER 2"}</h2>
       </div>
 
       {activePlayer === props.player && (

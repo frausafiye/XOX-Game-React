@@ -8,65 +8,39 @@ export const TableCell = ({
   selectHandler,
   value,
 }) => {
+  const directions = [
+    "horizontal",
+    "vertical",
+    "diagonalToLeftBottom",
+    "diagonalToRightBottom",
+  ];
   let activeClass = isActive ? "active" : "";
   let directionsClass = overlineDirections.length
     ? overlineDirections.join(" ")
     : "";
-  console.log("active class: " + activeClass);
-  console.log("directions class: " + directionsClass);
+  const edgeCells = [
+    { edge: "left", cells: [0, 3, 6] },
+    { edge: "right", cells: [2, 5, 8] },
+    { edge: "top", cells: [0, 1, 2] },
+    { edge: "bottom", cells: [6, 7, 8] },
+    { edge: "right-top", cells: [2] },
+    { edge: "right-bottom", cells: [8] },
+    { edge: "left-top", cells: [0] },
+    { edge: "left-bottom", cells: [6] },
+  ];
+  const edgeDirectionsForCell = edgeCells
+    .filter((obj) => obj.cells.includes(id))
+    .map((obj) => obj.edge);
+  console.log("id ", id, " edgeDirectionsForCell: ", edgeDirectionsForCell);
   return (
-    <td
-      key={id}
-      onClick={() => selectHandler(id)}
-      className={activeClass + " " + directionsClass}
-    >
-      <Span directionsClass={directionsClass} direction={"horizontal"} />
-      <Span directionsClass={directionsClass} direction={"vertical"} />
-      <Span
-        directionsClass={directionsClass}
-        direction={"diagonalToLeftBottom"}
-      />
-      <Span
-        directionsClass={directionsClass}
-        direction={"diagonalToRightBottom"}
-      />
-      {/* <span
-        style={{
-          display: directionsClass.includes("horizontal") ? "block" : "none",
-        }}
-        className="line-horizontal"
-      >
-        -
-      </span>
-      <span
-        style={{
-          display: directionsClass.includes("vertical") ? "block" : "none",
-        }}
-        className="line-vertical"
-      >
-        -
-      </span>
-      <span
-        style={{
-          display: directionsClass.includes("diagonalToLeftBottom")
-            ? "block"
-            : "none",
-        }}
-        className="line-diagonal-left-bottom"
-      >
-        -
-      </span>
-      <span
-        style={{
-          display: directionsClass.includes("diagonalToRightBottom")
-            ? "block"
-            : "none",
-        }}
-        className="line-diagonal-right-bottom"
-      >
-        -
-      </span> */}
-
+    <td key={id} onClick={() => selectHandler(id)} className={activeClass}>
+      {directions.map((direction) => (
+        <Span
+          directionsClass={directionsClass}
+          direction={direction}
+          edgesToShorten={edgeDirectionsForCell}
+        />
+      ))}
       <div>{value}</div>
     </td>
   );

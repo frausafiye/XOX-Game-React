@@ -9,28 +9,29 @@
 .red {
   background-color: #e60000;
 }
-.flex-container.red {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  align-items: center;
-  transform: translate(0, -50%);
-}
-.flex-container.blue {
-  left: 95%;
-}
-.players-box {
+
+.players-nav {
   width: 100%;
   padding: 3vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0 6px 10px -1px rgba(78, 78, 182, 0.2); */
   box-shadow: 0 6px 10px -1px rgba(41, 27, 38, 0.2);
+  text-shadow: 0px 1px 0px #000;
 }
 h2 {
   text-align: center;
+}
+@media screen and (max-width: 580px) {
+  :root {
+    font-size: 10px;
+  }
+  .App table {
+    top: 40%;
+    width: 50vw;
+    height: 50vw;
+  }
+  .container .flex-container {
+    transform: translate(0, -100%);
+  }
 }

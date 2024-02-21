@@ -9,10 +9,14 @@
   color: white;
   border-radius: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .winnerbox h1 {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .winner-btn {
   text-align: center;

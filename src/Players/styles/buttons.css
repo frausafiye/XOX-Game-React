@@ -1,38 +1,44 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+.red.container .flex-container {
+  right: 5vw;
+}
+.blue.container .flex-container {
+  left: 5vw;
+}
 .button-box {
   position: relative;
   display: inline-block;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .button-box .btn {
+  width: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  text-decoration: none;
-  /* background-color: #ffa12b; */
   background-color: #1a1919;
-  display: block;
-  position: relative;
-  padding: 20px 40px;
-
+  padding: 1rem 2rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-shadow: 0px 1px 0px #000;
   filter: dropshadow(color=#000, offx=0px, offy=1px);
-
-  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #6a3c02;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .button-box .btn:active {
   top: 10px;
-  background-color: #f78900;
+  background-color: #432602;
 
   -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
   -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
