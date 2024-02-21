@@ -16,7 +16,6 @@ export default function Table() {
       return { id: lineObj.id, direction: obj.direction };
     });
   });
-  console.log(overlinedCells);
   const matrixArray = [
     [...matrix.slice(0, 3)],
     [...matrix.slice(3, 6)],

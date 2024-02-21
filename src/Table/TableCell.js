@@ -31,7 +31,7 @@ export const TableCell = ({
   const edgeDirectionsForCell = edgeCells
     .filter((obj) => obj.cells.includes(id))
     .map((obj) => obj.edge);
-  console.log("id ", id, " edgeDirectionsForCell: ", edgeDirectionsForCell);
+
   return (
     <td key={id} onClick={() => selectHandler(id)} className={activeClass}>
       {directions.map((direction) => (

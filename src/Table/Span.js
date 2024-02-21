@@ -21,7 +21,6 @@ export const Span = ({ directionsClass, direction, edgesToShorten }) => {
       ? "line-diagonal-left-bottom"
       : "line-diagonal-right-bottom";
 
-  console.log("className ", lineClass + " " + edgeClassForSpan);
   return (
     <span
       style={{
