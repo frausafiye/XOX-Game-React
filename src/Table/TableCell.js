@@ -34,8 +34,9 @@ export const TableCell = ({
 
   return (
     <td key={id} onClick={() => selectHandler(id)} className={activeClass}>
-      {directions.map((direction) => (
+      {directions.map((direction, i) => (
         <Span
+          key={i}
           directionsClass={directionsClass}
           direction={direction}
           edgesToShorten={edgeDirectionsForCell}

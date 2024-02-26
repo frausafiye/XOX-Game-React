@@ -2,10 +2,10 @@
   " name": "XOX",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://https://frausafiye.github.io/XOX-Game-React",
+  "homepage": "https://frausafiye.github.io/XOX-Game-React",
   "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

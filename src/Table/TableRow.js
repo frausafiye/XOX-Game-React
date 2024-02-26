@@ -4,7 +4,7 @@ import { TableCell } from "./TableCell";
 export const TableRow = ({ i, line, selectHandler, overlinedCells }) => {
   return (
     <tr key={i}>
-      {line.map((obj) => {
+      {line.map((obj, index) => {
         let directions = [];
         overlinedCells.map((cell) => {
           if (cell.id === obj.id) {
@@ -13,6 +13,7 @@ export const TableRow = ({ i, line, selectHandler, overlinedCells }) => {
         });
         return (
           <TableCell
+            key={index}
             id={obj.id}
             overlineDirections={directions}
             selectHandler={selectHandler}

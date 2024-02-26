@@ -4,6 +4,7 @@ import scoreCalculator from "../logic/scoreCalculator";
 import "./styles/Player.css";
 import "./styles/buttons.css";
 import "./styles/scoreText.css";
+import { Button } from "./Button";
 
 export default function Player(props) {
   const {
@@ -54,7 +55,7 @@ export default function Player(props) {
       } else if (score.player2 < score.player1) {
         setWinner("Player1");
       } else {
-        setWinner("draw");
+        setWinner("Draw");
       }
     }
   }, [score]);
@@ -71,27 +72,21 @@ export default function Player(props) {
 
       {activePlayer === props.player && (
         <div className="flex-container">
-          <div className="button-box">
-            <button
-              onClick={() => buttonOnclickHandler("X")}
-              className={itemToAdd === "X" ? "btn selected" : "btn"}
-            >
-              X
-            </button>
-          </div>
-          <div className="button-box">
-            <button
-              onClick={() => buttonOnclickHandler("O")}
-              className={itemToAdd === "O" ? "btn selected" : "btn"}
-            >
-              O
-            </button>
-          </div>
-          <div className="button-box">
-            <button onClick={() => addHandler()} className="btn">
-              add
-            </button>
-          </div>
+          <Button
+            value={"X"}
+            buttonOnclickHandler={buttonOnclickHandler}
+            addHandler={addHandler}
+          />
+          <Button
+            value={"O"}
+            buttonOnclickHandler={buttonOnclickHandler}
+            addHandler={addHandler}
+          />
+          <Button
+            value={"add"}
+            buttonOnclickHandler={buttonOnclickHandler}
+            addHandler={addHandler}
+          />
         </div>
       )}
       <p>Score:{score[props.player]}</p>
